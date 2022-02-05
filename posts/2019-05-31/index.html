@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>デレステとx86とMacのおはなし - Razl-Dazl</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="デレステとx86とMacのおはなし" />
+<meta property="og:description" content="移行記事の為レイアウトが崩れる可能性有り
+それは唐突に&hellip;。
+「デレステのMVを大画面で見たい&hellip;しかしタブレット買う金は無い&hellip;」
+「じゃあPCで見れるようにすればいいのか」
+ということで、愛しのMacBook Proにx86なAndroidを突っ込んでみました。最初は素のAndroidを持ってきてインストールするも、デレステが起動せず&hellip;。
+
+
+
+「そもそもx86のサポート終わってんじゃん&hellip;」
+でも回避策あります。
+記事移行する時思ったけど、今ならiPhone接続してQuickTime Player使うだけで済むから良いよね..." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://razl-dazl.github.io/posts/2019-05-31/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2019-05-31T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-05-31T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="デレステとx86とMacのおはなし"/>
+<meta name="twitter:description" content="移行記事の為レイアウトが崩れる可能性有り
+それは唐突に&hellip;。
+「デレステのMVを大画面で見たい&hellip;しかしタブレット買う金は無い&hellip;」
+「じゃあPCで見れるようにすればいいのか」
+ということで、愛しのMacBook Proにx86なAndroidを突っ込んでみました。最初は素のAndroidを持ってきてインストールするも、デレステが起動せず&hellip;。
+
+
+
+「そもそもx86のサポート終わってんじゃん&hellip;」
+でも回避策あります。
+記事移行する時思ったけど、今ならiPhone接続してQuickTime Player使うだけで済むから良いよね..."/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://razl-dazl.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://razl-dazl.github.io/css/main.css" />
+
+	
+	<script src="https://razl-dazl.github.io/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<base href="https://razl-dazl.github.io/">
+	<h1 class="site-title"><a href="https://razl-dazl.github.io/">Razl-Dazl</a></h1>
+	<div class="site-description"><nav class="nav social">
+			<ul class="flat"></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">home</a>
+			</li>
+			
+			<li>
+				<a href="/tags/">tags</a>
+			</li>
+			
+			<li>
+				<a href="/posts/">all posts</a>
+			</li>
+			
+			<li>
+				<a href="/about/">about</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">デレステとx86とMacのおはなし</h1>
+			<div class="meta">Posted at &mdash; May 31, 2019</div>
+		</div>
+
+		<div class="markdown">
+			<span style="font-size: 50%">移行記事の為レイアウトが崩れる可能性有り</span>
+<p>それは唐突に&hellip;。</p>
+<p>「デレステのMVを大画面で見たい&hellip;しかしタブレット買う金は無い&hellip;」</p>
+<p>「じゃあPCで見れるようにすればいいのか」</p>
+<p>ということで、愛しのMacBook Proにx86なAndroidを突っ込んでみました。最初は素のAndroidを持ってきてインストールするも、デレステが起動せず&hellip;。</p>
+<figure class="center"><img src="/images/2019/05/31/01.png" width="70%"/>
+</figure>
+
+<p><strong>「そもそもx86のサポート終わってんじゃん&hellip;」</strong></p>
+<p>でも回避策あります。</p>
+<span style="font-size: 50%">記事移行する時思ったけど、今ならiPhone接続してQuickTime Player使うだけで済むから良いよね...</span>
+<h4 id="x86ってなあに">x86ってなあに</h4>
+<p>コンピュータの命令語とかの規格みたいなもの(アーキテクチャ)があって、その一種の名前です。そのへんに転がってるパソコンは大体x86とかx64(64ビット互換)です。Androidではx86はもう殆ど見かけなくなって、ARMっていうめちゃんこ勢力が強いのが主流になっています。Androidに乗ってるチップは大体Qualcomm製ですが、あれはARMです。そして、KirinやExynosといった自社製SoCも大体ARMです。林檎の携帯電話も。ARMのことだけ考えていれば大体困らない時代になったので、パフォーマンスを優先してサポートを切ったのでしょう&hellip;。</p>
+<h4 id="で何で動かんの">で、何で動かんの？</h4>
+<p>Android NDKとかいうキットで開発する際はCとかC++を使い、アーキテクチャ依存が出てくる模様。Javaだけよりもパフォーマンスが高いと思われ。</p>
+<h4 id="どうやって回避するの">どうやって回避するの？</h4>
+<p>PhoenixOSとかいう中華製のなんか怖いやつはx86コードをARM用に変換して動かしてくれる模様。(あんまり詳しくないのでこの表現でいいのかは分からないけど) 素のAndroidでも自分で弄って追加する方法があるらしいけど、自分はめんどくさいので中華に頼りました。</p>
+<hr>
+<h3 id="ダウンロードするもの">ダウンロードするもの</h3>
+<ul>
+<li>unetbootin
+<a href="https://unetbootin.github.io">https://unetbootin.github.io</a></li>
+<li>PhoenixOS x86バージョン
+<a href="http://www.phoenixos.com/ja_JP/download_x86">http://www.phoenixos.com/ja_JP/download_x86</a></li>
+<li>GLTools
+<a href="https://labs.xda-developers.com/store/app/com.n0n3m4.gltools">https://labs.xda-developers.com/store/app/com.n0n3m4.gltools</a></li>
+</ul>
+<p>GLtoolsのダウンロードはxdaのアカウントが要りますが、Googleアカウントで登録できるのですぐ終わります。</p>
+<h3 id="大まかな流れ">大まかな流れ</h3>
+<ol>
+<li>Androidをインストールするための領域・パーティション確保</li>
+<li>USBメモリでPhoenixOSのインストールディスクを作る</li>
+<li>インストールする</li>
+<li>GLToolsでチップセット名等の偽装(必須作業ではないが推奨)</li>
+<li>起動しなくなったりロードが進まなくなったらroot化状態を無効にする</li>
+<li>ちゃんと3Dリッチが再生できる</li>
+</ol>
+<p>以下全て自己責任で&hellip;。</p>
+<hr>
+<h3 id="1androidをインストールするための領域パーティション確保">1.Androidをインストールするための領域・パーティション確保</h3>
+<p>この辺他のサイトを参考にしましたが、そのサイトを発掘できなかったので一応書いておきます。
+HDD(SSD)の領域を分割します。デレステでMV見るだけなら、10GBもあれば大丈夫だと思います。ディスクユーティリティを探して起動。Lunchpadで検索すればすぐ出てくるかと。</p>
+<figure class="center"><img src="/images/2019/05/31/02.png" width="70%"/>
+</figure>
+
+<p>内蔵&gt;APPLE SSD SM0128G Media (一例) のパーティション作成をクリック。フォーマットはとりあえずFAT32とかにしておけばokです。</p>
+<figure class="center"><img src="/images/2019/05/31/03.png" width="70%"/>
+</figure>
+
+<h3 id="2usbメモリでphoenixosのインストールディスクを作る">2.USBメモリでPhoenixOSのインストールディスクを作る</h3>
+<p>unetbootinを使います。</p>
+<figure class="center"><img src="/images/2019/05/31/04.png" width="70%"/>
+</figure>
+
+<p>Diskimageを選択&gt; &ldquo;&hellip;&ldquo;を押してダウンロードしたPhoenixOSのisoイメージを選択 &gt; Driveのところは使用するUSBメモリを選択 &gt; OKを押す</p>
+<h3 id="3インストールする">3.インストールする</h3>
+<p>Macを再起動 &gt; 起動音がしたらoptionキー長押し &gt; 起動ディスクでUSBメモリに該当するものを選択</p>
+<p>インストールするかUSBから起動するか聞かれますが、せっかくパーティション分割をしているのでインストールします。インストールしないとGLtoolsも使えません。</p>
+<p>何か聞かれたときは大体YesでOKです。インストールする領域の選択は間違えないように気をつけてください。(さっきFATでフォーマットしてあるのでそこで判別できるかと)</p>
+<p>消えたら困るものは一応バックアップしましょう。2回領域の選択がありますが両方共、1で作成した領域でokです。</p>
+<p>スクショが取れないので文字だけの説明ですが許してください。</p>
+<p>インストールしたら適当に初期設定を済ませます。日本語の選択は設定画面でできるので、一旦英語を選んでおけばいいと思います。</p>
+<h3 id="4gltoolsでチップセット名等の偽装">4.GLToolsでチップセット名等の偽装</h3>
+<p>これをやると3Dリッチ・高画質再生ができるようになります。</p>
+<figure class="center"><img src="/images/2019/05/31/05.png" width="50%"/>
+</figure>
+
+<p>root権限が必要ですので適宜許可してください。(常に許可or10分間許可)</p>
+<p>Use fake GPU infoとUse fake CPU/RAM infoにチェックを入れる &gt; Use a template で Adreno 430とかを選択</p>
+<p>サポートしているチップセットに偽装することで、3Dリッチの選択が可能になります。</p>
+<h3 id="5起動しなくなったりロードが進まなくなったらroot化状態を無効にする">5.起動しなくなったりロードが進まなくなったらroot化状態を無効にする</h3>
+<p>デレステのインストールをして、アカウントを引き継ぎます。Androidからの引き継ぎであればデータを共有できますが、iOSだと多分消えますので注意。</p>
+<p>引き継ぎの途中で「失敗しました」と表示されるかもしれませんが、そのままブラウザで引き継ぎ作業を終えれば問題ありません。</p>
+<p>また、ブラウザの調子が悪い場合は、プリインされているものではなくfirefox等を入れてみてください。</p>
+<figure class="center"><img src="/images/2019/05/31/06.png" width="70%"/>
+</figure>
+
+<p>設定 &gt; Root Permission &gt; rootを無効化</p>
+<p>途中で進まなくなったらrootを無効にすればokです。</p>
+<h3 id="6優勝">6.優勝</h3>
+<figure class="center"><img src="/images/2019/05/31/07.jpg" width="70%"/>
+</figure>
+
+<p><strong>優勝！！！！</strong></p>
+		</div>
+
+		<div class="post-tags">
+			
+				
+					<nav class="nav tags">
+							<ul class="flat">
+								
+								<li><a href="/tags/android">Android</a></li>
+								
+								<li><a href="/tags/mac">Mac</a></li>
+								
+							</ul>
+					</nav>
+				
+			
+		</div>
+		</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> razl-dazl.github.io |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+
+
+</body>
+</html>

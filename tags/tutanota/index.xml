@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tutanota on Razl-Dazl</title>
+    <link>https://razl-dazl.github.io/tags/tutanota/</link>
+    <description>Recent content in tutanota on Razl-Dazl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>razl-dazl.github.io</copyright>
+    <lastBuildDate>Sat, 13 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://razl-dazl.github.io/tags/tutanota/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>暗号化メールサービスTutanotaによるセキュアなカレンダー機能</title>
+      <link>https://razl-dazl.github.io/posts/2019-07-13/</link>
+      <pubDate>Sat, 13 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://razl-dazl.github.io/posts/2019-07-13/</guid>
+      <description>&lt;span style=&#34;font-size: 50%&#34;&gt;移行記事の為レイアウトが崩れる可能性有り&lt;/span&gt;
+&lt;p&gt;Tutanotaといえば、End-to-Endの暗号化メールではProtonmailと並ぶ人気度のメールサービスですね。&lt;/p&gt;
+&lt;p&gt;そんなTutanotaが、つい先日カレンダー機能を実装しました。Tutanotaの無料アカウントさえ持っていれば、プライバシーに配慮したカレンダーを誰でも使用することができます。日本語レビューが未だに見当たらないため、自分が人柱をしてきました。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

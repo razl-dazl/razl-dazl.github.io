@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Razl-Dazl</title>
+    <link>https://razl-dazl.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on Razl-Dazl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>razl-dazl.github.io</copyright>
+    <lastBuildDate>Wed, 15 Dec 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://razl-dazl.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugoで文章を中央に寄せる方法</title>
+      <link>https://razl-dazl.github.io/posts/2021-12-15-hugo-text-centering/</link>
+      <pubDate>Wed, 15 Dec 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://razl-dazl.github.io/posts/2021-12-15-hugo-text-centering/</guid>
+      <description>&lt;p&gt;結局Hugoでサイトを生成することにしたのですが、文章を中央揃えにする際に少し手間取ったので、メモを残しておきます&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
