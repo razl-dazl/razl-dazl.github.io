@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>razl-dazl.github.io</copyright>
-    <lastBuildDate>Sat, 05 Feb 2022 21:00:00 +0900</lastBuildDate><atom:link href="https://razl-dazl.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Feb 2022 00:00:30 +0900</lastBuildDate><atom:link href="https://razl-dazl.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fusion Drive搭載iMacでパーティションを切っていた場合の初期化手順</title>
+      <link>https://razl-dazl.github.io/posts/2022-02-18-fusion-drive/</link>
+      <pubDate>Fri, 18 Feb 2022 00:00:30 +0900</pubDate>
+      
+      <guid>https://razl-dazl.github.io/posts/2022-02-18-fusion-drive/</guid>
+      <description>&lt;p&gt;iMacのパーティションを切ってLinuxを起動できるようにしていたのですが、Fusion Driveを搭載しているせいで初期化手順がややこしかったです&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>macOSで音源付きの録画を行う</title>
       <link>https://razl-dazl.github.io/posts/2022-02-05-mac-rec/</link>
