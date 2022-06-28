@@ -82,25 +82,25 @@ Macのこのあたりのフォルダ名が日本語である事にすごくム�
 <p>何故ならシェル上で見た実際のフォルダ名は英語だから。
 表示と実態が異なるのは気持ち悪いのでいただけない。</p>
 <p>このフォルダ名を英語にするには、.localizedという隠しファイルを消せばいいのですが…。</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">user@Mac-mini ~ % rm /Documents/.localized
-rm: /Documents/.localized: No such file or directory
-</code></pre></div><p>シェル上から消そうとしても「ファイルが無いよ」と言われてしまうんですよね。</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>user@Mac-mini ~ % rm /Documents/.localized
+</span></span><span style="display:flex;"><span>rm: /Documents/.localized: No such file or directory
+</span></span></code></pre></div><p>シェル上から消そうとしても「ファイルが無いよ」と言われてしまうんですよね。</p>
 <hr>
 <h2 id="解決方法">解決方法</h2>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">user@Mac-mini ~ % <span style="color:#b58900">cd</span> /Documents
-user@Mac-mini Documents % rm /.localized
-user@Mac-mini Documents %
-</code></pre></div><p>当該ディレクトリに移動してrmすれば良いということに気づきました。仕様が謎。</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>user@Mac-mini ~ % <span style="color:#b58900">cd</span> /Documents
+</span></span><span style="display:flex;"><span>user@Mac-mini Documents % rm /.localized
+</span></span><span style="display:flex;"><span>user@Mac-mini Documents %
+</span></span></code></pre></div><p>当該ディレクトリに移動してrmすれば良いということに気づきました。仕様が謎。</p>
 <hr>
 <h2 id="finderの再起動を忘れずに">Finderの再起動を忘れずに</h2>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">user@Mac-mini Documents % killall Finder
-</code></pre></div><p>後はFinderを再起動すればok</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>user@Mac-mini Documents % killall Finder
+</span></span></code></pre></div><p>後はFinderを再起動すればok</p>
 <p>これを行わないと反映されないと思います。</p>
 <hr>
 <h2 id="補足">補足</h2>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">user@Mac-mini /Applications % rm .localized
-override rw-r--r-- root/wheel <span style="color:#719e07">for</span> .localized?
-</code></pre></div><p>ちなみに、アプリケーションフォルダはホームフォルダの外にあるので一回確認が出ます。</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>user@Mac-mini /Applications % rm .localized
+</span></span><span style="display:flex;"><span>override rw-r--r-- root/wheel <span style="color:#719e07">for</span> .localized?
+</span></span></code></pre></div><p>ちなみに、アプリケーションフォルダはホームフォルダの外にあるので一回確認が出ます。</p>
 		</div>
 
 		<div class="post-tags">

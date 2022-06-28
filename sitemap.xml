@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://razl-dazl.github.io/tags/junit/</loc>
+    <lastmod>2022-06-27T19:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://razl-dazl.github.io/posts/2022-06-28-junit5-kclass/</loc>
+    <lastmod>2022-06-27T19:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://razl-dazl.github.io/tags/kotlin/</loc>
+    <lastmod>2022-06-27T19:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://razl-dazl.github.io/posts/</loc>
+    <lastmod>2022-06-27T19:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://razl-dazl.github.io/</loc>
+    <lastmod>2022-06-27T19:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://razl-dazl.github.io/tags/</loc>
+    <lastmod>2022-06-27T19:00:00+09:00</lastmod>
+  </url><url>
     <loc>https://razl-dazl.github.io/posts/2022-02-18-fusion-drive/</loc>
     <lastmod>2022-02-18T00:00:30+09:00</lastmod>
   </url><url>
@@ -9,15 +27,6 @@
     <lastmod>2022-02-18T00:00:30+09:00</lastmod>
   </url><url>
     <loc>https://razl-dazl.github.io/tags/macos/</loc>
-    <lastmod>2022-02-18T00:00:30+09:00</lastmod>
-  </url><url>
-    <loc>https://razl-dazl.github.io/posts/</loc>
-    <lastmod>2022-02-18T00:00:30+09:00</lastmod>
-  </url><url>
-    <loc>https://razl-dazl.github.io/</loc>
-    <lastmod>2022-02-18T00:00:30+09:00</lastmod>
-  </url><url>
-    <loc>https://razl-dazl.github.io/tags/</loc>
     <lastmod>2022-02-18T00:00:30+09:00</lastmod>
   </url><url>
     <loc>https://razl-dazl.github.io/posts/2022-02-05-mac-rec/</loc>

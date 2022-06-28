@@ -71,17 +71,17 @@
 <p>your.domain.com/layouts/shortcodes 内に、任意の名前のHTMLファイルを作成</p>
 <p>今回はcentering.htmlとします</p>
 <p>HTMLで中央揃えにする際のコードを書きます</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#268bd2">div</span> style<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;text-align:center&#34;</span>&gt;{{ .Get 0 }}&lt;/<span style="color:#268bd2">div</span>&gt;
-</code></pre></div><p><code>{{ .Get 0 }}</code>の部分は、Shortcodeでの0番目の引数を表します</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#268bd2">div</span> style<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;text-align:center&#34;</span>&gt;{{ .Get 0 }}&lt;/<span style="color:#268bd2">div</span>&gt;
+</span></span></code></pre></div><p><code>{{ .Get 0 }}</code>の部分は、Shortcodeでの0番目の引数を表します</p>
 <p>引数に変数名(例えばtext)を指定したい場合は、以下のように書くこともできます</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#268bd2">div</span> style<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;text-align:center&#34;</span>&gt;{{ .Get `text` }}&lt;/<span style="color:#268bd2">div</span>&gt;
-</code></pre></div><h3 id="2記事でshortcodeの記法に従った記述を行う">2.記事でShortcodeの記法に従った記述を行う</h3>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#268bd2">div</span> style<span style="color:#719e07">=</span><span style="color:#2aa198">&#34;text-align:center&#34;</span>&gt;{{ .Get `text` }}&lt;/<span style="color:#268bd2">div</span>&gt;
+</span></span></code></pre></div><h3 id="2記事でshortcodeの記法に従った記述を行う">2.記事でShortcodeの記法に従った記述を行う</h3>
 <p>Shortcodeの記法は以下のような感じです</p>
 <p>先程決めたファイル名を使用して指定します</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">{{&lt; centering &#34;ここに中央揃えにしたい文字列を入力する&#34;&gt;}}
-</code></pre></div><p>また、先程のHTMLファイルで引数に変数名を指定した場合は以下のようになります</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">{{&lt;centering text=&#34;ここに中央揃えにしたい文字列を入力する&#34;&gt;}}
-</code></pre></div><p>記事が出来上がったら<code>hugo server -D</code>なり<code>hugo -D</code>なりすれば、中央揃えになっている事が確認できると思います</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>{{&lt; centering &#34;ここに中央揃えにしたい文字列を入力する&#34;&gt;}}
+</span></span></code></pre></div><p>また、先程のHTMLファイルで引数に変数名を指定した場合は以下のようになります</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>{{&lt;centering text=&#34;ここに中央揃えにしたい文字列を入力する&#34;&gt;}}
+</span></span></code></pre></div><p>記事が出来上がったら<code>hugo server -D</code>なり<code>hugo -D</code>なりすれば、中央揃えになっている事が確認できると思います</p>
 <p>本当は画像の切取りについても書く予定だったんですけど疲れたので後日に&hellip;</p>
 		</div>
 

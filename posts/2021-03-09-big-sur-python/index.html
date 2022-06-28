@@ -82,14 +82,14 @@
 <p>いやーM1怖アッ…</p>
 <hr>
 <h2 id="でpythonが動かない">で、pythonが動かない</h2>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">user@Mac-mini ~ % python3 -V
-xcrun: error: invalid active developer path <span style="color:#719e07">(</span>/Library/Developer/CommandLineTools<span style="color:#719e07">)</span>, missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
-</code></pre></div><p>再インスコしてハイ元通り〜〜とはならないみたいで&hellip;。</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>user@Mac-mini ~ % python3 -V
+</span></span><span style="display:flex;"><span>xcrun: error: invalid active developer path <span style="color:#719e07">(</span>/Library/Developer/CommandLineTools<span style="color:#719e07">)</span>, missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+</span></span></code></pre></div><p>再インスコしてハイ元通り〜〜とはならないみたいで&hellip;。</p>
 <hr>
 <h2 id="command-line-toolsを入れる解決">Command Line Toolsを入れる(解決)</h2>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">user@Mac-mini ~ % xcode-select —install
-xcode-select: note: install requested <span style="color:#719e07">for</span> <span style="color:#b58900">command</span> line developer tools
-</code></pre></div><figure class="center"><img src="/images/2021/03/09/2.jpg" width="100%"/>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>user@Mac-mini ~ % xcode-select —install
+</span></span><span style="display:flex;"><span>xcode-select: note: install requested <span style="color:#719e07">for</span> <span style="color:#b58900">command</span> line developer tools
+</span></span></code></pre></div><figure class="center"><img src="/images/2021/03/09/2.jpg" width="100%"/>
 </figure>
 
 <p>確認のポップアップが出ます。</p>

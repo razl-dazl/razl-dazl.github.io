@@ -108,79 +108,79 @@
 <p>①rootkitXperia_20150926の中身のファイルをホームフォルダへ移動</p>
 <p>②SO-02Fの設定でUSBデバッグをONにしてPCと接続、SO-02Fで確認ダイアログが出てきたら適宜許可する。</p>
 <p>③adbコマンドが通るように設定してある前提で書きます。ターミナル.appを起動して以下を入力していきます。</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback"># 必要なファイルを送る
-adb push files/getroot /data/local/tmp/
-adb push files/su /data/local/tmp/
-adb push files/supolicy /data/local/tmp/
-adb push files/libsupol.so /data/local/tmp/
-adb push files/Superuser.apk /data/local/tmp/
-adb push files/busybox /data/local/tmp/
-adb push files/00stop_ric /data/local/tmp/
-adb push files/99SuperSUDaemon /data/local/tmp/
-adb push files/install-recovery.sh /data/local/tmp/
-adb push files/ric_disabler_mod.ko /data/local/tmp/
-adb push files/copymodulecrc /data/local/tmp/
-adb push files/saferic /data/local/tmp/
-adb push files/install_tool.sh /data/local/tmp/
-
-# 権限の適切な設定
-adb shell &#34;chmod 0755 /data/local/tmp/getroot&#34;
-adb shell &#34;chmod 0755 /data/local/tmp/busybox&#34;
-adb shell &#34;chmod 0644 /data/local/tmp/ric_disabler_mod.ko&#34;
-adb shell &#34;chmod 0755 /data/local/tmp/copymodulecrc&#34;
-adb shell &#34;chmod 0755 /data/local/tmp/install_tool.sh&#34;
-
-# 実行
-adb shell &#34;/data/local/tmp/getroot /data/local/tmp/install_tool.sh&#34;
-</code></pre></div><p>④再起動がかかると思うので、再起動後にsuperuserやsuperSUがインストールされていたら成功。さっきのファイルは不要になったので削除。</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">adb shell &#34;rm /data/local/tmp/getroot&#34;
-adb shell &#34;rm /data/local/tmp/su&#34;
-adb shell &#34;rm /data/local/tmp/supolicy&#34;
-adb shell &#34;rm /data/local/tmp/libsupol.so&#34;
-adb shell &#34;rm /data/local/tmp/Superuser.apk&#34;
-adb shell &#34;rm /data/local/tmp/busybox&#34;
-adb shell &#34;rm /data/local/tmp/00stop_ric&#34;
-adb shell &#34;rm /data/local/tmp/99SuperSUDaemon&#34;
-adb shell &#34;rm /data/local/tmp/install-recovery.sh&#34;
-adb shell &#34;rm /data/local/tmp/ric_disabler_mod.ko&#34;
-adb shell &#34;rm /data/local/tmp/copymodulecrc&#34;
-adb shell &#34;rm /data/local/tmp/saferic&#34;
-adb shell &#34;rm /data/local/tmp/install_tool.sh&#34;
-</code></pre></div><h3 id="3カスタムリカバリを入れる">3.カスタムリカバリを入れる</h3>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span># 必要なファイルを送る
+</span></span><span style="display:flex;"><span>adb push files/getroot /data/local/tmp/
+</span></span><span style="display:flex;"><span>adb push files/su /data/local/tmp/
+</span></span><span style="display:flex;"><span>adb push files/supolicy /data/local/tmp/
+</span></span><span style="display:flex;"><span>adb push files/libsupol.so /data/local/tmp/
+</span></span><span style="display:flex;"><span>adb push files/Superuser.apk /data/local/tmp/
+</span></span><span style="display:flex;"><span>adb push files/busybox /data/local/tmp/
+</span></span><span style="display:flex;"><span>adb push files/00stop_ric /data/local/tmp/
+</span></span><span style="display:flex;"><span>adb push files/99SuperSUDaemon /data/local/tmp/
+</span></span><span style="display:flex;"><span>adb push files/install-recovery.sh /data/local/tmp/
+</span></span><span style="display:flex;"><span>adb push files/ric_disabler_mod.ko /data/local/tmp/
+</span></span><span style="display:flex;"><span>adb push files/copymodulecrc /data/local/tmp/
+</span></span><span style="display:flex;"><span>adb push files/saferic /data/local/tmp/
+</span></span><span style="display:flex;"><span>adb push files/install_tool.sh /data/local/tmp/
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># 権限の適切な設定
+</span></span><span style="display:flex;"><span>adb shell &#34;chmod 0755 /data/local/tmp/getroot&#34;
+</span></span><span style="display:flex;"><span>adb shell &#34;chmod 0755 /data/local/tmp/busybox&#34;
+</span></span><span style="display:flex;"><span>adb shell &#34;chmod 0644 /data/local/tmp/ric_disabler_mod.ko&#34;
+</span></span><span style="display:flex;"><span>adb shell &#34;chmod 0755 /data/local/tmp/copymodulecrc&#34;
+</span></span><span style="display:flex;"><span>adb shell &#34;chmod 0755 /data/local/tmp/install_tool.sh&#34;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># 実行
+</span></span><span style="display:flex;"><span>adb shell &#34;/data/local/tmp/getroot /data/local/tmp/install_tool.sh&#34;
+</span></span></code></pre></div><p>④再起動がかかると思うので、再起動後にsuperuserやsuperSUがインストールされていたら成功。さっきのファイルは不要になったので削除。</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>adb shell &#34;rm /data/local/tmp/getroot&#34;
+</span></span><span style="display:flex;"><span>adb shell &#34;rm /data/local/tmp/su&#34;
+</span></span><span style="display:flex;"><span>adb shell &#34;rm /data/local/tmp/supolicy&#34;
+</span></span><span style="display:flex;"><span>adb shell &#34;rm /data/local/tmp/libsupol.so&#34;
+</span></span><span style="display:flex;"><span>adb shell &#34;rm /data/local/tmp/Superuser.apk&#34;
+</span></span><span style="display:flex;"><span>adb shell &#34;rm /data/local/tmp/busybox&#34;
+</span></span><span style="display:flex;"><span>adb shell &#34;rm /data/local/tmp/00stop_ric&#34;
+</span></span><span style="display:flex;"><span>adb shell &#34;rm /data/local/tmp/99SuperSUDaemon&#34;
+</span></span><span style="display:flex;"><span>adb shell &#34;rm /data/local/tmp/install-recovery.sh&#34;
+</span></span><span style="display:flex;"><span>adb shell &#34;rm /data/local/tmp/ric_disabler_mod.ko&#34;
+</span></span><span style="display:flex;"><span>adb shell &#34;rm /data/local/tmp/copymodulecrc&#34;
+</span></span><span style="display:flex;"><span>adb shell &#34;rm /data/local/tmp/saferic&#34;
+</span></span><span style="display:flex;"><span>adb shell &#34;rm /data/local/tmp/install_tool.sh&#34;
+</span></span></code></pre></div><h3 id="3カスタムリカバリを入れる">3.カスタムリカバリを入れる</h3>
 <p>XZDualRecoveryという有名なやつを使います。</p>
 <p>Z1c用のものをダウンロードし、1クリックといきたかったんですけど、またしてもうまく動作しないので手動で命令を打ち込んでいきました。</p>
 <p>①http://nut.xperia-files.comから必要なファイルをダウンロードし、解凍したフォルダの中身をホームフォルダへ移す</p>
 <p>②以下をターミナル.appへ打ち込む。SO-02Fにてダイアログが出てきたら適宜許可する。</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback"># 必要なファイルを送る
-adb shell &#34;mkdir /data/local/tmp/recovery&#34;
-adb push tmp/dr.prop /data/local/tmp/recovery/dr.prop
-adb push system/bin/chargemon /data/local/tmp/recovery/chargemon
-adb push system/bin/mr /data/local/tmp/recovery/mr
-adb push system/.XZDualRecovery/xbin/dualrecovery.sh /data/local/tmp/recovery/dualrecovery.sh
-adb push tmp/NDRUtils.apk /data/local/tmp/recovery/NDRUtils.apk
-adb push system/.XZDualRecovery/xbin/rickiller.sh /data/local/tmp/recovery/rickiller.sh
-adb push tmp/byeselinux.ko /data/local/tmp/recovery/byeselinux.ko
-adb push files/byeselinux/byeselinux.sh /data/local/tmp/recovery/byeselinux.sh
-adb push tmp/wp_mod.ko /data/local/tmp/recovery/wp_mod.ko
-adb push files/byeselinux/sysrw.sh /data/local/tmp/recovery/sysrw.sh
-adb push tmp/modulecrcpatch /data/local/tmp/recovery/modulecrcpatch
-adb push system/.XZDualRecovery/xbin/busybox /data/local/tmp/recovery/busybox
-adb push system/.XZDualRecovery/xbin/recovery.twrp.cpio.lzma /data/local/tmp/recovery/recovery.twrp.cpio.lzma
-adb push recovery.cwm.cpio.lzma /data/local/tmp/recovery/recovery.cwm.cpio.lzma
-adb push system/.XZDualRecovery/xbin/recovery.philz.cpio.lzma /data/local/tmp/recovery/recovery.philz.cpio.lzma
-adb push tmp/installrecovery.sh /data/local/tmp/recovery/install.sh
-
-# 権限
-adb shell &#34;chmod 755 /data/local/tmp/recovery/install.sh&#34;
-adb shell &#34;chmod 755 /data/local/tmp/recovery/busybox&#34;
-
-# がんばる
-adb shell &#34;su -c /system/bin/ls -la /data/local/tmp/recovery/busybox&#34;
-adb shell &#34;/system/xbin/su -c /data/local/tmp/recovery/install.sh&#34;
-
-# リカバリの導入に成功したら、不要なものは消す
-adb shell &#34;/system/bin/rm -rf /data/local/tmp/recovery
-</code></pre></div><h3 id="4rootを維持して146a1236へ">4.rootを維持して14.6.A.1.236へ</h3>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span># 必要なファイルを送る
+</span></span><span style="display:flex;"><span>adb shell &#34;mkdir /data/local/tmp/recovery&#34;
+</span></span><span style="display:flex;"><span>adb push tmp/dr.prop /data/local/tmp/recovery/dr.prop
+</span></span><span style="display:flex;"><span>adb push system/bin/chargemon /data/local/tmp/recovery/chargemon
+</span></span><span style="display:flex;"><span>adb push system/bin/mr /data/local/tmp/recovery/mr
+</span></span><span style="display:flex;"><span>adb push system/.XZDualRecovery/xbin/dualrecovery.sh /data/local/tmp/recovery/dualrecovery.sh
+</span></span><span style="display:flex;"><span>adb push tmp/NDRUtils.apk /data/local/tmp/recovery/NDRUtils.apk
+</span></span><span style="display:flex;"><span>adb push system/.XZDualRecovery/xbin/rickiller.sh /data/local/tmp/recovery/rickiller.sh
+</span></span><span style="display:flex;"><span>adb push tmp/byeselinux.ko /data/local/tmp/recovery/byeselinux.ko
+</span></span><span style="display:flex;"><span>adb push files/byeselinux/byeselinux.sh /data/local/tmp/recovery/byeselinux.sh
+</span></span><span style="display:flex;"><span>adb push tmp/wp_mod.ko /data/local/tmp/recovery/wp_mod.ko
+</span></span><span style="display:flex;"><span>adb push files/byeselinux/sysrw.sh /data/local/tmp/recovery/sysrw.sh
+</span></span><span style="display:flex;"><span>adb push tmp/modulecrcpatch /data/local/tmp/recovery/modulecrcpatch
+</span></span><span style="display:flex;"><span>adb push system/.XZDualRecovery/xbin/busybox /data/local/tmp/recovery/busybox
+</span></span><span style="display:flex;"><span>adb push system/.XZDualRecovery/xbin/recovery.twrp.cpio.lzma /data/local/tmp/recovery/recovery.twrp.cpio.lzma
+</span></span><span style="display:flex;"><span>adb push recovery.cwm.cpio.lzma /data/local/tmp/recovery/recovery.cwm.cpio.lzma
+</span></span><span style="display:flex;"><span>adb push system/.XZDualRecovery/xbin/recovery.philz.cpio.lzma /data/local/tmp/recovery/recovery.philz.cpio.lzma
+</span></span><span style="display:flex;"><span>adb push tmp/installrecovery.sh /data/local/tmp/recovery/install.sh
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># 権限
+</span></span><span style="display:flex;"><span>adb shell &#34;chmod 755 /data/local/tmp/recovery/install.sh&#34;
+</span></span><span style="display:flex;"><span>adb shell &#34;chmod 755 /data/local/tmp/recovery/busybox&#34;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># がんばる
+</span></span><span style="display:flex;"><span>adb shell &#34;su -c /system/bin/ls -la /data/local/tmp/recovery/busybox&#34;
+</span></span><span style="display:flex;"><span>adb shell &#34;/system/xbin/su -c /data/local/tmp/recovery/install.sh&#34;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># リカバリの導入に成功したら、不要なものは消す
+</span></span><span style="display:flex;"><span>adb shell &#34;/system/bin/rm -rf /data/local/tmp/recovery
+</span></span></code></pre></div><h3 id="4rootを維持して146a1236へ">4.rootを維持して14.6.A.1.236へ</h3>
 <p>xdaにprerootedなものありますね&hellip;</p>
 <p><a href="https://forum.xda-developers.com/sony-xperia-z1-compact/general/stock-14-6-1-236-customized-ce1-1280-t3265402">https://forum.xda-developers.com/sony-xperia-z1-compact/general/stock-14-6-1-236-customized-ce1-1280-t3265402</a></p>
 <p>zipをカスタムリカバリからインストールするだけです。</p>

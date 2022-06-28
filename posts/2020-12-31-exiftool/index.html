@@ -90,19 +90,19 @@
 <h2 id="homebrew導入">Homebrew導入</h2>
 <p>MacでExiftoolをインストールするにはHomebrewが必須。yumとかみたいなパッケージ管理ツール。</p>
 <p>ターミナルで以下を実行。</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">/bin/bash -c <span style="color:#2aa198">&#34;</span><span style="color:#719e07">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span style="color:#719e07">)</span><span style="color:#2aa198">&#34;</span>
-</code></pre></div><p>本家と書いてることは一緒ですがうまくいかなかったら<a href="https://brew.sh/index_ja">本家のインストール手順</a>を見てください。</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>/bin/bash -c <span style="color:#2aa198">&#34;</span><span style="color:#719e07">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span style="color:#719e07">)</span><span style="color:#2aa198">&#34;</span>
+</span></span></code></pre></div><p>本家と書いてることは一緒ですがうまくいかなかったら<a href="https://brew.sh/index_ja">本家のインストール手順</a>を見てください。</p>
 <hr>
 <h2 id="exiftool導入">Exiftool導入</h2>
 <p>Homebrewの導入ができたらbrewコマンドが使用可能になるので、以下を実行。</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">brew install exiftool
-</code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>brew install exiftool
+</span></span></code></pre></div><hr>
 <h2 id="exiftoolを実際に使う">ExifToolを実際に使う</h2>
 <p>写真を適当なフォルダにまとめてぶち込む。</p>
 <p>そしたらカレントディレクトリをそのフォルダにして、以下を実行。</p>
 <p>*.heicの部分を*のみにしたりすれば、フォルダ内の全ての画像ファイルに対して処理が行われる。</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">exiftool ‘-FileName&gt;AllDates’ *.heic
-</code></pre></div><p>昔はファイル名がどういうルールになってるか書く必要があった(%Y%m%dなんちゃら〜って)と思ったんだけど、今は何もせずに勝手にファイル名の数字を日時と認識してくれるらしい。便利すぎ。</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>exiftool ‘-FileName&gt;AllDates’ *.heic
+</span></span></code></pre></div><p>昔はファイル名がどういうルールになってるか書く必要があった(%Y%m%dなんちゃら〜って)と思ったんだけど、今は何もせずに勝手にファイル名の数字を日時と認識してくれるらしい。便利すぎ。</p>
 <p>ファイル名の接頭辞とか、アンダーバーで繋ぐかハイフンで繋ぐかとか、そういう細かい所を気にしなくていいのはありがたい。ありがたすぎる。</p>
 <p><del>&hellip;という訳で、はてなブログを備忘録的に使うことにしたけど。</del></p>
 <p><del>いつまで続くか&hellip;</del></p>

@@ -78,27 +78,27 @@
 <hr>
 <h2 id="構成">構成</h2>
 <p>your.domain.comより下がGitHubのリポジトリに格納する対象部分です。</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">work_dir/
-├─ docker-compose.yml
-├─ your.domain.com/
-│  ├─ 404.md
-│  ├─ index.md
-│  └─ etc...
-└─ run.sh
-</code></pre></div><hr>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>work_dir/
+</span></span><span style="display:flex;"><span>├─ docker-compose.yml
+</span></span><span style="display:flex;"><span>├─ your.domain.com/
+</span></span><span style="display:flex;"><span>│  ├─ 404.md
+</span></span><span style="display:flex;"><span>│  ├─ index.md
+</span></span><span style="display:flex;"><span>│  └─ etc...
+</span></span><span style="display:flex;"><span>└─ run.sh
+</span></span></code></pre></div><hr>
 <h2 id="docker-composeyml作成">docker-compose.yml作成</h2>
 <p>Dockerの設定ファイルを作成</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">version: &#39;3&#39;
-services:
-  jekyll:
-    image: jekyll/jekyll
-    volumes:
-      - ./your.domain.com:/your.domain.com
-    working_dir: /your.domain.com
-    command: jekyll s
-    ports:
-      - &#34;14000:4000&#34;
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>version: &#39;3&#39;
+</span></span><span style="display:flex;"><span>services:
+</span></span><span style="display:flex;"><span>  jekyll:
+</span></span><span style="display:flex;"><span>    image: jekyll/jekyll
+</span></span><span style="display:flex;"><span>    volumes:
+</span></span><span style="display:flex;"><span>      - ./your.domain.com:/your.domain.com
+</span></span><span style="display:flex;"><span>    working_dir: /your.domain.com
+</span></span><span style="display:flex;"><span>    command: jekyll s
+</span></span><span style="display:flex;"><span>    ports:
+</span></span><span style="display:flex;"><span>      - &#34;14000:4000&#34;
+</span></span></code></pre></div><ul>
 <li>
 <p>images</p>
 <ul>
@@ -139,14 +139,14 @@ services:
 <hr>
 <h2 id="実行用ファイル作成">実行用ファイル作成</h2>
 <p>docker-composeのコマンドって何か忘れやすいのでシェルスクリプトとしてメモっておきます&hellip;</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">docker-compose up --build
-</code></pre></div><p>内容はこの一行だけ</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>docker-compose up --build
+</span></span></code></pre></div><p>内容はこの一行だけ</p>
 <hr>
 <h2 id="起動">起動</h2>
 <p>ターミナルやPowerShellでrun.shを実行すれば後は勝手に処理が進みます。</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">cd work_dir
-./run.sh
-</code></pre></div><p>ブラウザを立ち上げてlocalhost:14000にアクセスすればサイトのプレビューが確認できます。</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>cd work_dir
+</span></span><span style="display:flex;"><span>./run.sh
+</span></span></code></pre></div><p>ブラウザを立ち上げてlocalhost:14000にアクセスすればサイトのプレビューが確認できます。</p>
 <p>以上のファイルをiCloudにバックアップ。これでいつでも環境が簡単に復元できるってわけ。去年までDockerのDの字も知らなかったけど使えば使うほど便利だな〜と&hellip;。</p>
 <p>最近は仕事でDockerばっかり触っているので、事ある毎にDockerの使い道を考えています。公私混同。さいあく。</p>
 		</div>

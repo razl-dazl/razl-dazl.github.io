@@ -79,10 +79,10 @@ macOS Mojaveにアップグレード後、fastbootコマンドを実行時に変
 <p>相変わらず2019年にもなってROM焼きをしてしまう性です。</p>
 <p>macOS Mojaveにアップグレード後、fastbootコマンドを実行時に変なエラーが出てうまく行かなくなってしまいました。</p>
 <p>例えば</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">User$ fastboot devices
-</code></pre></div><p>としたときに</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">ERROR: Couldn&#39;t create a device interface iterator: (e00002bd)
-</code></pre></div><p>というなんかよくわかんないのが出ます。</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>User$ fastboot devices
+</span></span></code></pre></div><p>としたときに</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ERROR: Couldn&#39;t create a device interface iterator: (e00002bd)
+</span></span></code></pre></div><p>というなんかよくわかんないのが出ます。</p>
 <p><a href="https://android.stackexchange.com/questions/209725/fastboot-devices-command-doesnt-work-after-macos-high-sierra-10-14-4-upgrade">https://android.stackexchange.com/questions/209725/fastboot-devices-command-doesnt-work-after-macos-high-sierra-10-14-4-upgrade</a></p>
 <p>なんか同じことで困ってる人がいました。読み進めると、ライブラリ内のファイルを差し替えれば直る模様。ライブラリ内のファイルを差し替えるということで、まあつまりはadbコマンドやfastbootコマンドが通る環境が揃っているのが前提ですね。</p>
 <p><a href="https://www.xda-developers.com/install-adb-windows-macos-linux/">https://www.xda-developers.com/install-adb-windows-macos-linux/</a></p>
