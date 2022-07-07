@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>razl-dazl.github.io</copyright>
-    <lastBuildDate>Mon, 27 Jun 2022 19:00:00 +0900</lastBuildDate><atom:link href="https://razl-dazl.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Jul 2022 05:30:00 +0900</lastBuildDate><atom:link href="https://razl-dazl.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mac miniを壁や机に固定すると便利って話</title>
+      <link>https://razl-dazl.github.io/posts/2022-07-08-mac-mini/</link>
+      <pubDate>Fri, 08 Jul 2022 05:30:00 +0900</pubDate>
+      
+      <guid>https://razl-dazl.github.io/posts/2022-07-08-mac-mini/</guid>
+      <description>&lt;figure class=&#34;center&#34;&gt;&lt;img src=&#34;https://razl-dazl.github.io/images/2022/07/08/1.jpg&#34; width=&#34;70%&#34;/&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;まあ既にMac miniは手放してしまっているのですが・・・&lt;/p&gt;
+&lt;p&gt;メインで使用していた頃は、Mac miniをこのような感じで固定していました&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>KClassを使ってメソッドを呼び出してみる</title>
       <link>https://razl-dazl.github.io/posts/2022-06-28-junit5-kclass/</link>
